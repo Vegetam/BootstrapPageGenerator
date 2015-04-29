@@ -8058,3 +8058,7 @@ button.close {
     display: block;
 	text-align: center;
 }
+#MD {width:992px;}
+#SM {width:768px;}
+#XS {width:480px;}
+#LG {width:100%}
