@@ -13,6 +13,7 @@
 <link href="css/bootstrap-combined.min.css" rel="stylesheet">
 <link href="css/layoutit.css" rel="stylesheet">
 <link href="css/docs.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
@@ -36,6 +37,9 @@
 <script type="text/javascript" src="js/blob.js"></script>
 <script src="js/docs.min.js"></script>
 
+<style>
+
+</style>
 </head>
 
 <body style="min-height: 660px; cursor: auto;" class="edit">
@@ -46,6 +50,12 @@
       	<ul class="nav" id="menu-layoutit">
           <li class="divider-vertical"></li>
           <li>
+		  <div class="btn-group">
+			<button onclick="resizeCanvas('lg')" class="btn btn-primary"><i class="fa fa-desktop"></i> </button>
+			<button onclick="resizeCanvas('md')" class="btn btn-primary"><i class="fa fa-laptop"></i> </button>
+			<button onclick="resizeCanvas('sm')" class="btn btn-primary"><i class="fa fa-tablet"></i> </button>
+			<button onclick="resizeCanvas('xs')" class="btn btn-primary"><i class="fa fa-mobile-phone"></i> </button>
+		  </div>
             <div class="btn-group">
               <a class="btn btn-primary" href="/" target="_blank"><i class="icon-home icon-white"></i>Home</a>
             </div>
@@ -66,6 +76,7 @@
   </div>
 </div>
 <div class="container-fluid">
+<div class="changeDimension">
   <div class="row-fluid">
     <div class="">
       <div class="sidebar-nav">
@@ -2093,6 +2104,47 @@
   </div>
   <div class="modal-footer"> <a class="btn" data-dismiss="modal" onclick="javascript:saveHtml();">Save</a> </div>
 </div>
+</div>
+<script>
+function resizeCanvas(size)
+{
 
+var containerID = document.getElementsByClassName("changeDimension");
+var containerDownload = document.getElementById("download-layout").getElementsByClassName("container-fluid")[0];
+var row = document.getElementsByClassName("demo ui-sortable");
+var container1 = document.getElementsByClassName("container1");
+if (size == "md")
+{
+$(containerID).width('id', "MD");
+$(row).attr('id', "MD");
+$(container1).attr('id', "MD");
+$(containerDownload).attr('id', "MD");
+}
+if (size == "lg")
+{
+$(containerID).attr('id', "LG");
+$(row).attr('id', "LG");
+$(container1).attr('id', "LG");
+$(containerDownload).attr('id', "LG");
+}
+if (size == "sm")
+{
+$(containerID).attr('id', "SM");
+$(row).attr('id', "SM");
+$(container1).attr('id', "SM");
+$(containerDownload).attr('id', "SM");
+}
+if (size == "xs")
+{
+$(containerID).attr('id', "XS");
+$(row).attr('id', "XS");
+$(container1).attr('id', "XS");
+$(containerDownload).attr('id', "XS");
+
+}
+
+
+}
+</script>
 </body>
 </html>
