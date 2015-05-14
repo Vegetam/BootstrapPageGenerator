@@ -206,10 +206,10 @@ body {
   padding: 5px 8px;
 }
 .bs-docs-social-buttons .twitter-follow-button {
-  width: 225px !important;
+  width: 225px ;
 }
 .bs-docs-social-buttons .twitter-share-button {
-  width: 98px !important;
+  width: 98px ;
 }
 /* Style the GitHub buttons via CSS instead of inline attributes */
 .github-btn {
@@ -340,44 +340,44 @@ body {
  * Carbon ads
  *
  * Single display ad that shows on all pages (except homepage) in page headers.
- * The hella `!important` is required for any pre-set property.
+ * The hella `` is required for any pre-set property.
  */
 
 .carbonad {
-  width: auto !important;
-  margin: 30px -30px -31px !important;
-  padding: 20px !important;
+  width: auto ;
+  margin: 30px -30px -31px ;
+  padding: 20px ;
   overflow: hidden; /* clearfix */
-  height: auto !important;
-  font-size: 13px !important;
-  line-height: 16px !important;
+  height: auto ;
+  font-size: 13px ;
+  line-height: 16px ;
   text-align: left;
-  background: transparent !important;
-  border: solid #866ab3 !important;
-  border-width: 1px 0 !important;
+  background: transparent ;
+  border: solid #866ab3 ;
+  border-width: 1px 0 ;
 }
 .carbonad-img {
-  margin: 0 !important;
+  margin: 0 ;
 }
 .carbonad-text,
 .carbonad-tag {
-  float: none !important;
-  display: block !important;
-  width: auto !important;
-  height: auto !important;
-  margin-left: 145px !important;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  float: none ;
+  display: block ;
+  width: auto ;
+  height: auto ;
+  margin-left: 145px ;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
 }
 .carbonad-text {
-  padding-top: 0 !important;
+  padding-top: 0 ;
 }
 .carbonad-tag {
-  color: inherit !important;
-  text-align: left !important;
+  color: inherit ;
+  text-align: left ;
 }
 .carbonad-text a,
 .carbonad-tag a {
-  color: #fff !important;
+  color: #fff ;
 }
 .carbonad #azcarbon > img {
   display: none; /* hide what I assume are tracking images */
@@ -385,20 +385,20 @@ body {
 
 @media (min-width: 480px) {
   .carbonad {
-    width: 330px !important;
-    margin: 20px auto !important;
+    width: 330px ;
+    margin: 20px auto ;
     border-radius: 4px;
-    border-width: 1px !important;
+    border-width: 1px ;
   }
   .bs-docs-masthead .carbonad {
-    margin: 50px auto 0 !important;
+    margin: 50px auto 0 ;
   }
 }
 
 @media (min-width: 768px) {
   .carbonad {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 0 ;
+    margin-right: 0 ;
   }
 }
 
@@ -407,9 +407,9 @@ body {
     position: absolute;
     top: 0;
     right: 15px; /* 15px instead of 0 since box-sizing */
-    margin: 0 !important;
-    padding: 15px !important;
-    width: 330px !important;
+    margin: 0 ;
+    padding: 15px ;
+    width: 330px ;
   }
   .bs-docs-masthead .carbonad {
     position: static;
@@ -1131,11 +1131,11 @@ h1[id] {
 }
 .responsive-utilities td.is-visible {
   color: #468847;
-  background-color: #dff0d8 !important;
+  background-color: #dff0d8 ;
 }
 .responsive-utilities td.is-hidden {
   color: #ccc;
-  background-color: #f9f9f9 !important;
+  background-color: #f9f9f9 ;
 }
 
 /* Responsive tests */
