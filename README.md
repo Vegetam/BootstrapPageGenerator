@@ -30,3 +30,4 @@ Glyphicon
 
 http://www.francescomalagrino.com/BootstrapPageGenerator/3/
 
+[![Codacy Badge](https://www.codacy.com/project/badge/970393072b7c492c87e5ddb3ff0bfa32)](https://www.codacy.com/app/francesco-malagrino/BootstrapPageGenerator)
