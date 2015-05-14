@@ -31,3 +31,8 @@ Glyphicon
 http://www.francescomalagrino.com/BootstrapPageGenerator/3/
 
 [![Codacy Badge](https://www.codacy.com/project/badge/970393072b7c492c87e5ddb3ff0bfa32)](https://www.codacy.com/app/francesco-malagrino/BootstrapPageGenerator)
+
++
++
++[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Vegetam/bootstrappagegenerator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
++
