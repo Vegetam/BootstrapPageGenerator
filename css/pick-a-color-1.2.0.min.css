@@ -1,4 +1,3 @@
-
 .pick-a-color-markup *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 .pick-a-color-markup .hex-pound{padding-left:8px;padding-right:8px}@media screen and (max-width:979px){.pick-a-color-markup .hex-pound{padding:3px 5px 0px 5px;min-height:30px}}
 .pick-a-color-markup .pick-a-color{padding:5px;height:34px;width:100%}@media screen and (max-width:979px){.pick-a-color-markup .pick-a-color{width:100%;font-size:18px;padding:9px;min-width:222px;height:47px}}
