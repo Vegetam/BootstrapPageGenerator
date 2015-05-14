@@ -88,8 +88,8 @@ body {
 
 
 .ui-draggable-dragging .view { display:block;}
-/*.demo .ui-sortable-placeholder { outline: 5px dotted #ddd; visibility: visible!Important; border-radius: 4px; }*/
-.ui-sortable-placeholder { outline: 1px dashed #ddd;visibility: visible!Important; border-radius: 4px;}
+/*.demo .ui-sortable-placeholder { outline: 5px dotted #ddd; visibility: visible; border-radius: 4px; }*/
+.ui-sortable-placeholder { outline: 1px dashed #ddd;visibility: visible; border-radius: 4px;}
 .edit .drag { position: absolute; top: 0;right: 0; cursor: pointer; }
 
 .box,.lyrow { position:relative;}
@@ -181,7 +181,7 @@ body.devpreview { margin-left:0px;}
 	-o-transition: all 0ms ease;
 	transition: all 0ms ease;
 }
-.devpreview .drag, .devpreview .configuration, .devpreview .remove { display:none !Important; }
+.devpreview .drag, .devpreview .configuration, .devpreview .remove { display:none ; }
 .sourcepreview .column, .sourcepreview .row-fluid, .sourcepreview .demo .box {
 	margin:0px 0;
 	padding:0px;
