@@ -1,8 +1,9 @@
 /* compiler is working */
 body {
+	background: red !important;
 	padding-top:50px;
 	padding-bottom: 40px;
-	margin-left:200px;
+	margin-left:200px !important;
 	-webkit-transition: margin 500ms ease;
 	-moz-transition: margin 500ms ease;
 	-ms-transition: margin 500ms ease;
