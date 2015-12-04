@@ -11,7 +11,7 @@
     <!-- Le styles -->
     <!-- <link href="css/bootstrap-combined.min.css" rel="stylesheet"> -->
     <link href="css/toolbox.css" rel="stylesheet">
-    <link href="css/layoutit.css" rel="stylesheet">
+    <link href="css/editor.css" rel="stylesheet">
     <link href="css/docs.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -39,6 +39,7 @@
     </style>
   </head>
   <body style="cursor: auto;" class="edit toolbox-reset">
+<<<<<<< HEAD
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="container">
@@ -66,6 +67,37 @@
               </div>
             </li>
           </ul>
+=======
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="nav-collapse collapse">
+            <ul class="nav" id="menu-layoutit">
+              <li class="divider-vertical"></li>
+              <li>
+                <div class="btn-group">
+                  <button onclick="resizeCanvas('lg')" class="btn btn-primary"><i class="fa fa-desktop"></i> </button>
+                  <button onclick="resizeCanvas('md')" class="btn btn-primary"><i class="fa fa-laptop"></i> </button>
+                  <button onclick="resizeCanvas('sm')" class="btn btn-primary"><i class="fa fa-tablet"></i> </button>
+                  <button onclick="resizeCanvas('xs')" class="btn btn-primary"><i class="fa fa-mobile-phone"></i> </button>
+                </div>
+                <div class="btn-group">
+                  <a class="btn btn-primary" href="/" target="_blank"><i class="icon-home icon-white"></i>Home</a>
+                </div>
+                <div class="btn-group" data-toggle="buttons-radio">
+                  <button type="button" id="edit" class="btn btn-primary active"><i class="icon-edit icon-white"></i>Edit</button>
+                  <button type="button" class="btn btn-primary" id="devpreview"><i class="icon-eye-close icon-white"></i>Developer</button>
+                  <button type="button" class="btn btn-primary" id="sourcepreview"><i class="icon-eye-open icon-white"></i>Preview</button>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-target="#downloadModal" rel="/build/downloadModal" role="button" data-toggle="modal"><i class="icon-chevron-down icon-white"></i>Download</button>
+                  <button class="btn btn-primary" href="#clear" id="clear"><i class="icon-trash icon-white"></i>Clear</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+>>>>>>> 2462a40a2d7a4cae869411dfe34fea43c3048101
       </div>
     </div>
   </nav>
@@ -240,11 +272,11 @@
                         <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Emphasis <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                           <li class="active"><a href="#" rel="">Default</a></li>
-                          <li class=""><a href="#" rel="muted">Muted</a></li>
-                          <li class=""><a href="#" rel="text-warning">Warning</a></li>
-                          <li class=""><a href="#" rel="text-error">Error</a></li>
-                          <li class=""><a href="#" rel="text-info">Info</a></li>
-                          <li class=""><a href="#" rel="text-success">Success</a></li>
+                          <li class=""><a href="#" rel="emphasized">Emphasized</a></li>
+                          <li class=""><a href="#" rel="emphasized2">Emphasized 2</a></li>
+                          <li class=""><a href="#" rel="emphasized3">Emphasized 3</a></li>
+                          <li class=""><a href="#" rel="emphasized4">Emphasized 4</a></li>
+                          <li class=""><a href="#" rel="emphasized-orange">Emphasized orange</a></li>
                         </ul>
                       </span>
                     </span>
@@ -308,7 +340,23 @@
                     </div>
                   </div>
                   <div class="box box-element ui-draggable">
-                    <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Remove</a> <span class="drag label"><i class="icon-move"></i>Drag</span> <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">Editor</button> <a class="btn btn-mini" href="#" rel="unstyled">Unstyled</a> <a class="btn btn-mini" href="#" rel="inline">Inline</a> </span>
+                    <a href="#close" class="remove label label-important">
+                      <i class="icon-remove icon-white"></i>Remove
+                    </a>
+                    <span class="drag label"><i class="icon-move"></i>Drag</span>
+                    <span class="configuration">
+                      <button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">Editor</button>
+                      <span class="btn-group">
+                         <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Bullets <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                           <li class="active"><a href="#" rel="">Default</a></li>
+                           <li class=""><a href="#" rel="list-unstyled">list-unstyled</a></li>
+                           <li class=""><a href="#" rel="list-arrows">list-rrows</a></li>
+                           <li class=""><a href="#" rel="list-arrows small">.list-arrows.small</a></li>
+                         </ul>
+                       </span>
+                      <a class="btn btn-mini" href="#" rel="inline">Inline</a>
+                    </span>
                     <div class="preview">Unordered List</div>
                     <div class="view">
                       <ul contenteditable="true">
