@@ -1,0 +1,16 @@
+.toolbox-reset {
+    background: inherit;
+    color: inherit;
+    display: inherit;
+    /*font-family: inherit;*/
+    /*font-size: inherit;*/
+    line-height: inherit;
+    margin: inherit;
+    padding: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+
+    & .collapse {
+      display: block;
+    }
+}
