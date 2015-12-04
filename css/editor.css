@@ -329,3 +329,5 @@ a.language-selected {
   padding: inherit;
   -webkit-text-size-adjust: inherit;
   -ms-text-size-adjust: inherit; }
+  .toolbox-reset .collapse {
+    display: block; }
