@@ -12,18 +12,32 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-// Start a server with Live Reload
-gulp.task('serve', ['sass'], function () {
-  browserSync({
-    server: ['.tmp', './']
-  });
-
-  gulp.watch(['sass/**/*.scss'], ['sass']);
+gulp.task('sass:watch', function () {
+  gulp.watch('scss/*.scss', ['sass']);
   gulp.watch(['css/*.css'], reload);
-
 });
 
 
-gulp.task('sass:watch', function () {
-  gulp.watch('scss/**/*.scss', ['sass']);
+// Start a server with Live Reload
+gulp.task('serve', ['sass'], function () {
+  browserSync({
+    // notify: false,
+    // Customize the BrowserSync console logging prefix
+    // logPrefix: 'WSK',
+    // Run as an https by uncommenting 'https: true'
+    // Note: this uses an unsigned certificate which on first access
+    //       will present a certificate warning in the browser.
+    // https: true,
+    server: ['.tmp', './']
+
+    // proxy: 'http://localhost:8888/'
+
+  });
+
+
+  gulp.watch(['./scss/**/*.scss'], ['sass']);
+  gulp.watch(['css/**/*.css'], reload);
+  gulp.watch(['./*.html'], reload);
+  // gulp.watch(['./*.php'], reload);
+  // gulp.watch(['js/**/*.js'], [reload]);
 });
