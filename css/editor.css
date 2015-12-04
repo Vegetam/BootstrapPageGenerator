@@ -46,7 +46,8 @@ body {
   border: 1px solid #DDDDDD;
   border-radius: 4px;
   position: relative;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  padding-left: 220px; }
 
 .edit .demo:after {
   background-color: #F5F5F5;
