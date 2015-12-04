@@ -367,3 +367,15 @@ a.language-selected {
 .toolbox-reset .modal.fade.in {
   top: 10%;
   display: inherit !important; }
+
+#MD {
+  width: 992px; }
+
+#SM {
+  width: 768px; }
+
+#XS {
+  width: 480px; }
+
+#LG {
+  width: 100%; }
