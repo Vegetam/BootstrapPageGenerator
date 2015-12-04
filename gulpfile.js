@@ -10,7 +10,7 @@ var        sass = require('gulp-sass');
 
 
 gulp.task('sass', function () {
-  gulp.src('scss/*.scss')
+  gulp.src('scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('css'));
 });
@@ -37,8 +37,8 @@ gulp.task('serve', ['sass'], function () {
 
   });
 
-  gulp.watch(['./scss/*.scss'], ['sass']);
-  gulp.watch(['css/*.css'], reload);
+  gulp.watch(['./scss/**/*.scss'], ['sass']);
+  gulp.watch(['css/**/*.css'], reload);
   gulp.watch(['./*.html'], reload);
   // gulp.watch(['./*.php'], reload);
   // gulp.watch(['js/**/*.js'], [reload]);
