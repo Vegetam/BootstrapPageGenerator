@@ -64,7 +64,7 @@ body {
 	left:0px;
 	bottom:0;
 	top:44px;
-	background:#ccc;
+	background:#464646;
 	padding: 9px 0; z-index:10;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
@@ -72,7 +72,7 @@ body {
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
-.sidebar-nav .nav-header { cursor:pointer; font-size:14px; color:#fff; text-shadow:0 1px 0 rgba(0, 0, 0, 0.3);}
+.sidebar-nav .nav-header { cursor:pointer; font-size:14px; color:#fff;}
 .sidebar-nav .nav-header span.label { font-size:10px; /*padding-bottom:0;*/ position:relative; top:-1px;}
 .sidebar-nav .nav-header i.icon-plus {}
 .sidebar-nav .nav-header .popover {color:#999; text-shadow:none;}
@@ -86,11 +86,18 @@ body {
 .boxes {}
 .sidebar-nav li { line-height:25px; }
 .sidebar-nav .box { line-height:25px; width:170px; height:25px; }
-.sidebar-nav .preview { display: block; color:#666; font-size:12px; line-height:22px;}
-.sidebar-nav .preview input { width:90px; padding:0 10px; background:#bbb; font-size:10px; color:#999; line-height:20px; height:20px; position:relative; top:-1px; }
-.sidebar-nav .view { display: none; }
-.sidebar-nav .remove,
-.sidebar-nav .configuration { display: none; }
+.sidebar-nav .preview { display: block; color:#fff; font-size:12px; line-height:22px;}
+.sidebar-nav .preview input {
+	width: 105px;
+padding: 0 10px;
+font-size: 10px;
+line-height: 20px;
+height: 20px;
+position: relative;
+top: -1px;
+border: 0;
+}
+
 
 .sidebar-nav .boxes { display:none;}
 
@@ -108,7 +115,13 @@ body {
 .edit .demo .lyrow .drag { top:5px; right:80px; z-index:10; }
 .edit .demo .column .box .drag { top:5px; }
 .edit .demo .column .box .configuration {position: absolute; top: 3px; right: 140px;white-space:nowrap; }
-.edit .demo .remove { position: absolute; top: 5px; right: 5px; z-index:10; }
+.edit .demo .remove {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index:10;
+	color: #fff;
+}
 .demo .configuration {
 	filter: alpha(opacity=0);
 	opacity: 0;
