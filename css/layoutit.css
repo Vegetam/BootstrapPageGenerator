@@ -1,8 +1,7 @@
-/* compiler is working */
 body {
 	padding-top:50px;
 	padding-bottom: 40px;
-	margin-left:200px !important;
+	margin-left:200px;
 	-webkit-transition: margin 500ms ease;
 	-moz-transition: margin 500ms ease;
 	-ms-transition: margin 500ms ease;
@@ -22,11 +21,11 @@ body {
 }
 .navbar-inverse .brand {width:180px; color:#fff; }
 .brand img {float:left; margin:2px 10px 0 0; }
-.brand .label {
-	position:relative;
-	left:10px;
-	top:-3px;
-	font-weight:normal;
+.brand .label { 
+	position:relative; 
+	left:10px; 
+	top:-3px; 
+	font-weight:normal; 
 	font-size:9px;
 	background:#666;
 	-webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -34,17 +33,7 @@ body {
 	box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-.edit .demo {
-  margin-left:0px;
-  margin-top:10px;
-  padding:30px 15px 15px;
-  border-radius: 4px;
-  position:relative;
-  word-wrap: break-word;
-
-}
-
-
+.edit .demo { margin-left:0px; margin-top:10px; padding:30px 15px 15px; border: 1px solid #DDDDDD; border-radius: 4px; position:relative; word-wrap: break-word;}
 .edit .demo:after {
 	background-color: #F5F5F5;
 	border: 1px solid #DDDDDD;
@@ -64,7 +53,7 @@ body {
 	left:0px;
 	bottom:0;
 	top:44px;
-	background:#464646;
+	background:#ccc;
 	padding: 9px 0; z-index:10;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
@@ -72,7 +61,7 @@ body {
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
-.sidebar-nav .nav-header { cursor:pointer; font-size:14px; color:#fff;}
+.sidebar-nav .nav-header { cursor:pointer; font-size:14px; color:#fff; text-shadow:0 1px 0 rgba(0, 0, 0, 0.3);}
 .sidebar-nav .nav-header span.label { font-size:10px; /*padding-bottom:0;*/ position:relative; top:-1px;}
 .sidebar-nav .nav-header i.icon-plus {}
 .sidebar-nav .nav-header .popover {color:#999; text-shadow:none;}
@@ -86,18 +75,11 @@ body {
 .boxes {}
 .sidebar-nav li { line-height:25px; }
 .sidebar-nav .box { line-height:25px; width:170px; height:25px; }
-.sidebar-nav .preview { display: block; color:#fff; font-size:12px; line-height:22px;}
-.sidebar-nav .preview input {
-	width: 105px;
-padding: 0 10px;
-font-size: 10px;
-line-height: 20px;
-height: 20px;
-position: relative;
-top: -1px;
-border: 0;
-}
-
+.sidebar-nav .preview { display: block; color:#666; font-size:12px; line-height:22px;}
+.sidebar-nav .preview input { width:90px; padding:0 10px; background:#bbb; font-size:10px; color:#999; line-height:20px; height:20px; position:relative; top:-1px; }
+.sidebar-nav .view { display: none; }
+.sidebar-nav .remove,
+.sidebar-nav .configuration { display: none; }
 
 .sidebar-nav .boxes { display:none;}
 
@@ -115,13 +97,7 @@ border: 0;
 .edit .demo .lyrow .drag { top:5px; right:80px; z-index:10; }
 .edit .demo .column .box .drag { top:5px; }
 .edit .demo .column .box .configuration {position: absolute; top: 3px; right: 140px;white-space:nowrap; }
-.edit .demo .remove {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	z-index:10;
-	color: #fff;
-}
+.edit .demo .remove { position: absolute; top: 5px; right: 5px; z-index:10; }
 .demo .configuration {
 	filter: alpha(opacity=0);
 	opacity: 0;
@@ -139,11 +115,11 @@ border: 0;
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
-.demo .lyrow:hover > .drag,
-.demo .lyrow:hover > .configuration,
+.demo .lyrow:hover > .drag, 
+.demo .lyrow:hover > .configuration, 
 .demo .lyrow:hover > .remove,
-.demo .box:hover .drag,
-.demo .box:hover .configuration,
+.demo .box:hover .drag, 
+.demo .box:hover .configuration, 
 .demo .box:hover .remove { filter: alpha(opacity=100); opacity: 1; }
 .edit .demo .row-fluid:before {
 	background-color: #F5F5F5;
@@ -197,7 +173,7 @@ border: 0;
 
 /* preview */
 body.devpreview { margin-left:0px;}
-.devpreview .sidebar-nav {
+.devpreview .sidebar-nav { 
 	left:-200px;
 	-webkit-transition: all 0ms ease;
 	-moz-transition: all 0ms ease;

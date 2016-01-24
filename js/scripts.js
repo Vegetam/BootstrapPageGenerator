@@ -1,9 +1,9 @@
 var webpage = "";
 function supportstorage() {
-	if (typeof window.localStorage=='object')
+	if (typeof window.localStorage=='object') 
 		return true;
 	else
-		return false;
+		return false;		
 }
 
 function handleSaveLayout() {
@@ -16,7 +16,7 @@ function handleSaveLayout() {
 	}
 }
 
-var layouthistory;
+var layouthistory; 
 function saveLayout(){
 	var data = layouthistory;
 	if (!data) {
@@ -35,10 +35,10 @@ function saveLayout(){
 	}
 	layouthistory = data;
 	//console.log(data);
-	/*$.ajax({
-		type: "POST",
-		url: "/build/saveLayout",
-		data: { layout: $('.demo').html() },
+	/*$.ajax({  
+		type: "POST",  
+		url: "/build/saveLayout",  
+		data: { layout: $('.demo').html() },  
 		success: function(data) {
 			//updateButtonsVisibility();
 		}
@@ -46,20 +46,20 @@ function saveLayout(){
 }
 
  function downloadLayout(){
-
-	$.ajax({
-		type: "POST",
-		url: "/build/downloadLayout",
-		data: { layout: $('#download-layout').html() },
+	
+	$.ajax({  
+		type: "POST",  
+		url: "/build/downloadLayout",  
+		data: { layout: $('#download-layout').html() },  
 		success: function(data) { window.location.href = '/build/download'; }
 	});
 }
 
 function downloadHtmlLayout(){
-	$.ajax({
-		type: "POST",
-		url: "/build/downloadLayout",
-		data: { layout: $('#download-layout').html() },
+	$.ajax({  
+		type: "POST",  
+		url: "/build/downloadLayout",  
+		data: { layout: $('#download-layout').html() },  
 		success: function(data) { window.location.href = '/build/downloadHtml'; }
 	});
 }
@@ -78,10 +78,10 @@ function undoLayout() {
 		return true;
 	}
 	return false;
-	/*$.ajax({
-		type: "POST",
-		url: "/build/getPreviousLayout",
-		data: { },
+	/*$.ajax({  
+		type: "POST",  
+		url: "/build/getPreviousLayout",  
+		data: { },  
 		success: function(data) {
 			undoOperation(data);
 		}
@@ -103,10 +103,10 @@ function redoLayout() {
 	}
 	return false;
 	/*
-	$.ajax({
-		type: "POST",
-		url: "/build/getPreviousLayout",
-		data: { },
+	$.ajax({  
+		type: "POST",  
+		url: "/build/getPreviousLayout",  
+		data: { },  
 		success: function(data) {
 			redoOperation(data);
 		}
@@ -296,10 +296,10 @@ var stopsave = 0;
 var startdrag = 0;
 var demoHtml = $(".demo").html();
 var currenteditor = null;
-// $(window).resize(function() {
-// 	$("body").css("min-height", $(window).height() - 90);
-// 	$(".demo").css("min-height", $(window).height() - 160)
-// });
+$(window).resize(function() {
+	$("body").css("min-height", $(window).height() - 90);
+	$(".demo").css("min-height", $(window).height() - 160)
+});
 
 function restoreData(){
 	if (supportstorage()) {
@@ -334,8 +334,8 @@ $(document).ready(function() {
 		contentsCss: ['css/bootstrap-combined.min.css'],
 		allowedContent: true
 	});
-	// $("body").css("min-height", $(window).height() - 50);
-	// $(".demo").css("min-height", $(window).height() - 130);
+	$("body").css("min-height", $(window).height() - 50);
+	$(".demo").css("min-height", $(window).height() - 130);
 	$(".sidebar-nav .lyrow").draggable({
 		connectToSortable: ".demo",
 		helper: "clone",
@@ -468,7 +468,7 @@ $(document).ready(function() {
 	}, timerSave)
 })
 
-function saveHtml()
+function saveHtml() 
 			{
 			webpage = '<html>\n<head>\n<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-2.0.0.min.js"></script>\n<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>\n<link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">\n<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/bootstrap.min.js"></script>\n</head>\n<body>\n'+ webpage +'\n</body>\n</html>'
 			/* FM aka Vegetam Added the function that save the file in the directory Downloads. Work only to Chrome Firefox And IE*/
@@ -499,3 +499,4 @@ function saveHtml()
 			saveAs(blob, "webpage.html");
 		}
 		}
+

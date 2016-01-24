@@ -35,3 +35,5 @@ http://www.francescomalagrino.com/BootstrapPageGenerator/3/
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Vegetam/bootstrappagegenerator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+## License
+MIT
