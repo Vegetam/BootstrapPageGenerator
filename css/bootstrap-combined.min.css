@@ -8062,3 +8062,43 @@ button.close {
 #SM {width:768px;}
 #XS {width:480px;}
 #LG {width:100%}
+.color-swatches .brand-primary
+{
+background-color: #428BCA;
+}	
+.color-swatches .brand-success 
+{
+background-color: #5CB85C;
+}	
+.color-swatches .brand-info 
+{
+background-color: #5BC0DE;
+}
+.color-swatches .brand-warning 
+{
+background-color: #F0AD4E;
+}
+.color-swatches .brand-danger 
+{
+background-color: #D9534F;
+}
+.color-swatches .gray-darker 
+{
+background-color: #222222;
+}		
+.color-swatches .gray-dark 
+{
+background-color: #333333;
+}
+.color-swatches .gray 
+{
+background-color: #555555;
+}
+.color-swatches .gray-light 
+{
+background-color: #999999;
+}
+.color-swatches .gray-lighter 
+{
+background-color: #EEEEEE;
+}	
