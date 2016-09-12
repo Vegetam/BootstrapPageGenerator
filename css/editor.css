@@ -2,7 +2,7 @@
 body {
   padding-top: 50px;
   padding-bottom: 40px;
-  margin-left: 200px !important;
+  margin-left: 210px !important;
   -webkit-transition: margin 500ms ease;
   -moz-transition: margin 500ms ease;
   -ms-transition: margin 500ms ease;
@@ -62,13 +62,14 @@ body {
 
 .sidebar-nav {
   position: fixed;
-  width: 200px;
+  width: 210px;
   left: 0px;
   bottom: 0;
   top: 44px;
   background: #464646;
   padding: 9px 0;
   z-index: 10;
+  overflow: auto;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -263,7 +264,7 @@ body.devpreview {
   margin-left: 0px; }
 
 .devpreview .sidebar-nav {
-  left: -200px;
+  left: -210px;
   -webkit-transition: all 0ms ease;
   -moz-transition: all 0ms ease;
   -ms-transition: all 0ms ease;
