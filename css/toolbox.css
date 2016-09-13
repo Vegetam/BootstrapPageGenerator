@@ -230,8 +230,8 @@
  */
 @font-face {
   font-family: 'BebasNeue';
-  src: url("/apps/front_end/assets/bebasneue-webfont.eot");
-  src: url("/apps/front_end/assets/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("/apps/front_end/assets/bebasneue-webfont.woff") format("woff"), url("/apps/front_end/assets/bebasneue-webfont.ttf") format("truetype"), url("/apps/front_end/assets/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+  src: url("./fonts/bebas-neue/BebasNeue-webfont.eot");
+  src: url("./fonts/bebas-neue/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/bebas-neue/BebasNeue-webfont.woff") format("woff"), url("./fonts/bebas-neue/BebasNeue-webfont.ttf") format("truetype"), url("./fonts/bebas-neue/BebasNeue-webfont.svg#bebas_neueregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
