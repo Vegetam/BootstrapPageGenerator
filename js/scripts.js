@@ -466,10 +466,11 @@ $(document).ready(function() {
 	setInterval(function() {
 		handleSaveLayout();
 	}, timerSave);
+        var prevalue_sv = $('.sidebar-nav').css('overflow');
         $('.popover-info').hover(function(){
                $('.sidebar-nav').css('overflow', 'inherit'); 
         }, function(){
-               $('.sidebar-nav').css('overflow', 'auto');
+               $('.sidebar-nav').css('overflow', prevalue_sv);
         });
 });
 
