@@ -13,5 +13,6 @@ Try it: [Live Demo](https://cdn.rawgit.com/Vegetam/BootstrapPageGenerator/master
 
 ### Authors
 
+  * [justjavac](https://github.com/justjavac) (Main Author)
   * [Vegetam](https://github.com/Vegetam) (Main Author)
   * [RDCH106](https://github.com/RDCH106)
