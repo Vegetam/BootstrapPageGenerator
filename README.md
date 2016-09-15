@@ -7,6 +7,8 @@ Bootstrap Page Generator is an Open Source alternative to [LayoutIt!](http://www
 
 Create frontend code simply and quickly with Bootstrap using a drag & drop interface builder.
 
+![screenshot](https://cloud.githubusercontent.com/assets/1483414/18440053/f5c2e120-7907-11e6-9770-d10ac5082959.PNG)
+
 Try it: [Live Demo](https://cdn.rawgit.com/Vegetam/BootstrapPageGenerator/master/index.html)
 
 ### Authors
