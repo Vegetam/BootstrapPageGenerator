@@ -466,7 +466,12 @@ $(document).ready(function() {
 	setInterval(function() {
 		handleSaveLayout()
 	}, timerSave)
-})
+        $('.popover-info').hover(function(){
+               $('.sidebar-nav').css('overflow', 'inherit'); 
+        }, function(){
+               $('.sidebar-nav').css('overflow', 'auto');
+        });
+});
 
 function saveHtml()
 			{
