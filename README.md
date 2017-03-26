@@ -9,10 +9,15 @@ Create frontend code simply and quickly with Bootstrap using a drag & drop inter
 
 ![screenshot](https://cloud.githubusercontent.com/assets/1483414/18440053/f5c2e120-7907-11e6-9770-d10ac5082959.PNG)
 
-Try it: [Live Demo](https://cdn.rawgit.com/Vegetam/BootstrapPageGenerator/master/index.html)
+Try it: [Live Demo](http://www.francescomalagrino.com/BootstrapPageGenerator/3/)
 
 ### Authors
 
-  * [justjavac](https://github.com/justjavac) (Main Author)
   * [Vegetam](https://github.com/Vegetam) (Main Author)
-  * [RDCH106](https://github.com/RDCH106)
+
+New :
+
+Update a new section under css called font-awesome
+
+You can use also inside the ckeditor the font-awesome and added a new project with Bootstrap 4 alpha 6 visit here for the version 4 https://github.com/Vegetam/BoostrapPageGenerator4
+
