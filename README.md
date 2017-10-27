@@ -30,3 +30,7 @@ Update a new section under css called font-awesome
 
 You can use also inside the ckeditor the font-awesome and added a new project with Bootstrap 4 alpha 6 visit here for the version 4 https://github.com/Vegetam/BoostrapPageGenerator4
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Vegetam/bootstrappagegenerator/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
